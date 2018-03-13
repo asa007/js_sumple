@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title>Practice</title>
+		<script>
+			function change_text(change_id,change_word){
+	        document.getElementById(change_id).textContent=change_word;
+            }
+		</script>
+	</head>
+<body>
+	<div>
+		<p>あなたの好きな色は？</p>
+		<input type="button" value="赤" onclick="window.alert('赤')">
+		<input type="button" value="青" onclick="window.alert('青')">
+		<input type="button" value="黄" onclick="window.alert('黄')">
+	</div>
+	<div>
+		<p>あなたの好きな果物は？</p>
+		<input type="button" value="りんご" onclick="change_text('fruit','りんご')">
+		<input type="button" value="みかん" onclick="change_text('fruit','みかん')">
+		<input type="button" value="ばなな" onclick="change_text('fruit','ばなな')">
+		<p id="fruit"></p>
+	</div>
+</body>
+</html>
